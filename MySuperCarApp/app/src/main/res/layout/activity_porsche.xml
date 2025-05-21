@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <ImageView
+        android:id="@+id/image_porsche"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/porsche_logo"
+        android:contentDescription="Porsche Logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title_porsche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_porsche"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Porsche"
+        android:textColor="#FFD700"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_porsche_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_porsche"
+        android:layout_marginTop="20dp"
+        android:text="Porsche is a German automotive manufacturer renowned for its high-performance sports cars, SUVs, and sedans. Founded in 1931 by Ferdinand Porsche, the brand blends precision engineering with iconic design to create legendary models like the 911, Cayman, and Taycan. Porsche emphasizes driving dynamics, innovation, and luxury, making it a leader in both combustion and electric vehicle markets."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+</RelativeLayout>

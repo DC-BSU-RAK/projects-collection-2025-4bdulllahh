@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <ImageView
+        android:id="@+id/image_astonmartin"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/astonmartin_logo"
+        android:contentDescription="Aston Martin Logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title_astonmartin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_astonmartin"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Aston Martin"
+        android:textColor="#FFD700"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_astonmartin_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_astonmartin"
+        android:layout_marginTop="20dp"
+        android:text="Aston Martin is a British luxury sports car manufacturer famous for its elegant design, powerful performance, and association with James Bond films. Established in 1913, the company blends craftsmanship with advanced technology to create iconic models such as the DB11, Vantage, and DBS Superleggera. Aston Martin cars are renowned for their refined interiors, dynamic handling, and timeless style, representing the pinnacle of British automotive excellence."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+</RelativeLayout>

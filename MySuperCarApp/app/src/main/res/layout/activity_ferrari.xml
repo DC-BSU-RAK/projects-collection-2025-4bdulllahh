@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <ImageView
+        android:id="@+id/image_ferrari"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ferrari_logo"
+        android:contentDescription="Ferrari Logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title_ferrari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_ferrari"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Ferrari"
+        android:textSize="28sp"
+        android:textColor="#FFD700"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_ferrari_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_ferrari"
+        android:layout_marginTop="20dp"
+        android:text="Ferrari is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded by Enzo Ferrari in 1939, it has become one of the most prestigious names in motorsports and automotive history. Ferrari is known for producing high-performance cars with iconic models like the LaFerrari, F8 Tributo, and SF90 Stradale. The prancing horse logo symbolizes speed, power, and heritage. Ferrari has a legendary presence in Formula 1 and continues to define the blend of racing DNA and luxury craftsmanship."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+         />
+
+</RelativeLayout>

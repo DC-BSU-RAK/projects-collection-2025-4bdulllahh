@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".HomeActivity">
+
+    <!-- Gradient Background -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gradient" />
+
+    <!-- ScrollView with padding for breathing space -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <GridLayout
+                android:id="@+id/logo_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:useDefaultMargins="true"
+                android:alignmentMode="alignMargins">
+
+                <!-- Lamborghini -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF">
+
+                    <ImageView
+                        android:id="@+id/logo_lamborghini"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:padding="20dp"
+                        android:src="@drawable/lamborghini_logo"
+                        android:contentDescription="Lamborghini" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Ferrari -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/logo_ferrari"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Ferrari"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ferrari_logo" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- McLaren -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/logo_mclaren"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="McLaren"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/mclaren_logo" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Bugatti -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/logo_bugatti"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Bugatti"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bugatti_logo" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Aston Martin -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/logo_astonmartin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Aston Martin"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/astonmartin_logo" />
+                </androidx.cardview.widget.CardView>
+
+                <!-- Porsche -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="#E6FFFFFF"
+                    card_view:cardCornerRadius="24dp"
+                    card_view:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/logo_porsche"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="Porsche"
+                        android:padding="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/porsche_logo" />
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

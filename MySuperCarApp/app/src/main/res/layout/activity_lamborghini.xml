@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <!-- Lamborghini Logo -->
+    <ImageView
+        android:id="@+id/image_lamborghini"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lamborghini_logo"
+        android:contentDescription="Lamborghini Logo"
+        android:scaleType="fitCenter" />
+
+    <!-- Company Name -->
+    <TextView
+        android:id="@+id/title_lamborghini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_lamborghini"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lamborghini"
+        android:textSize="28sp"
+        android:textColor="#FFD700"
+        android:textAlignment="center"
+        android:gravity="center"
+        />
+
+    <!-- Company Info -->
+    <TextView
+        android:id="@+id/text_lambo_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_lamborghini"
+        android:layout_marginTop="20dp"
+        android:text="Lamborghini, officially Automobili Lamborghini S.p.A., is a luxury sports car manufacturer based in Sant'Agata Bolognese, Italy. Founded in 1963 by Ferruccio Lamborghini, the company was created to compete with Ferrari. Lamborghini is known for its aggressive styling, powerful V10 and V12 engines, and iconic models like the Aventador, Huracán, and Revuelto. The brand's emblem, a golden bull, reflects Ferruccio's zodiac sign and represents strength and speed. Lamborghini continues to push the boundaries of performance and design, blending Italian craftsmanship with cutting-edge engineering."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:paddingTop="10dp" />
+</RelativeLayout>

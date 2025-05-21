@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <ImageView
+        android:id="@+id/image_bugatti"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bugatti_logo"
+        android:contentDescription="Bugatti Logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title_bugatti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_bugatti"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Bugatti"
+        android:textColor="#FFD700"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_bugatti_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bugatti"
+        android:layout_marginTop="20dp"
+        android:text="Bugatti is a French luxury automobile manufacturer known for its ultra-high-performance hypercars combining exquisite craftsmanship with extreme speed. Founded in 1909 by Ettore Bugatti, the brand has a rich heritage in racing and luxury design. Modern Bugatti models like the Veyron and Chiron set records for speed and engineering innovation, blending powerful W16 engines with advanced aerodynamics and lavish interiors. Bugatti represents the pinnacle of automotive exclusivity and performance."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+</RelativeLayout>

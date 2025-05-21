@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/circle_white_bg"
+        android:src="@drawable/ic_back_arrow"
+        android:scaleType="center"
+        android:contentDescription="Back" />
+
+    <ImageView
+        android:id="@+id/image_mclaren"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mclaren_logo"
+        android:contentDescription="McLaren Logo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/title_mclaren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_mclaren"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="McLaren"
+        android:textColor="#FFD700"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text_mclaren_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_mclaren"
+        android:layout_marginTop="20dp"
+        android:text="McLaren Automotive is a British car manufacturer known for producing high-performance supercars with advanced aerodynamics and cutting-edge engineering. Founded in 1963 by Bruce McLaren as a racing team, the brand made its mark in Formula 1 before launching its first road car, the McLaren F1, in the 1990s. Today, McLaren’s lineup includes engineering marvels like the 720S, Artura, and P1, each designed with a relentless focus on speed, innovation, and driving precision. With its headquarters in Woking, England, McLaren continues to push the limits of automotive technology while honoring its racing heritage."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+</RelativeLayout>

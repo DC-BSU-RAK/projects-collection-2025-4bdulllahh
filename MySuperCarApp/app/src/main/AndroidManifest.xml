@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mysupercarapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MySuperCarApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MySuperCarApp">
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Home Page -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- Lamborghini Page -->
+        <activity
+            android:name=".LamborghiniActivity"
+            android:exported="false" />
+
+        <!-- Ferrari Page -->
+        <activity
+            android:name=".FerrariActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".McLarenActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".BugattiActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".AstonMartinActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".PorscheActivity"
+            android:exported="false"/>
+
+
+    </application>
+
+</manifest>
